@@ -1,0 +1,1016 @@
+body,
+.HomePage {
+  background: #f3f5fa !important;
+}
+
+.HomePageSectionOne,
+.HomePageTestimonialSection,
+.HomePageChartHeaderContainer,
+.HomePageChartContainer,
+.HomePageLogoCarouselSection,
+.HomePageLogoCarouselWrapper,
+.HomePageFeatureSection,
+.HomePageFeatureGrid,
+.HomePageFeatureCardsCol,
+.HomePageFeatureCard,
+.HomePageChartMessage,
+.HomePageLogoCarouselTitle {
+  background: #f3f5fa !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.HomePageSectionOne {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  background: #f3f5fa;
+  padding-left: 7vw;
+  padding-right: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.HomePageSectionOneContent {
+  z-index: 2;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 340px;
+  max-width: 700px;
+}
+
+.HomePageSectionOneTitle,
+.HomePageSectionOneTitleEm {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.HomePageSectionOneTitle {
+  font-size: 6.5vw;
+  font-weight: 650;
+  color: #6f10ff;
+  margin: 0 0 24px 0;
+  line-height: 1.05;
+  text-align: left;
+}
+
+.HomePageSectionOneTitleEm {
+  font-style: italic;
+  font-weight: 650;
+  color: #6f10ff;
+}
+
+.HomePageSectionOneSubtitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  color: #222;
+  margin: 0 0 24px 2px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-shadow: 0 2px 12px rgba(80, 80, 120, 0.18), 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.HomePageSectionOneDownloadBtn {
+  background: linear-gradient(90deg, #aa80ff 0%, #4b82fe 100%);
+  color: #fff;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 40px;
+  padding: 20px 48px;
+  margin-top: 16px;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: inline-block;
+  letter-spacing: 0.01em;
+  transition: background 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.HomePageSectionOneDownloadBtn:hover {
+  background: linear-gradient(90deg, #4b82fe 0%, #aa80ff 100%);
+  color: #fff;
+}
+
+.HomePageSectionOneImageWrapper {
+  position: absolute;
+  top: -60px;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.HomePageSectionOneImage {
+  width: 1200px;
+  height: auto;
+  object-fit: contain;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  display: block;
+  max-width: none;
+  min-width: 0;
+}
+
+.HomePageLogoCarouselSection {
+  width: 100%;
+  background: #f3f5fa;
+  padding: 48px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: none;
+}
+
+.HomePageLogoCarouselTitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageLogoCarouselWrapper {
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  background: #f3f5fa;
+  min-height: 160px;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+}
+
+.HomePageLogoCarouselWrapper::before,
+.HomePageLogoCarouselWrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 240px; /* Increased fade width */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.HomePageLogoCarouselWrapper::before {
+  left: 0;
+  background: linear-gradient(to right, #f3f5fa 70%, rgba(255, 255, 255, 0));
+}
+
+.HomePageLogoCarouselWrapper::after {
+  right: 0;
+  background: linear-gradient(to left, #f3f5fa 70%, rgba(255, 255, 255, 0));
+}
+
+.HomePageLogoCarouselTrack {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  animation: carousel-scroll 120s linear infinite;
+  width: max-content;
+  height: 100%;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+
+.HomePageLogoCarouselLogoWrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.HomePageLogoCarouselLogo {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(0.2) brightness(0.95);
+  opacity: 0.9;
+  transition: filter 0.2s, opacity 0.2s;
+  background: transparent;
+  margin: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.HomePageLogoCarouselLogo:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.HomePageLogoCarouselDivider {
+  width: 2px;
+  height: 100%;
+  background: #e0e0e0;
+  border-radius: 1px;
+  margin: 0 0;
+  flex-shrink: 0;
+  align-self: stretch;
+  min-height: 90px;
+}
+
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.HomePageTestimonialSection {
+  position: relative;
+  width: 100vw;
+  min-height: 800px;
+  background: #f3f5fa;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: flex-end;
+}
+.HomePageTestimonialCurveBg {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  width: 2300px;
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.HomePageTestimonialContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 64px 6vw 180px 0;
+  box-sizing: border-box;
+}
+
+.HomePageTestimonialQuoteBlock {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 320px;
+  max-width: 900px;
+  margin-left: 80px;
+  z-index: 2;
+}
+
+.HomePageTestimonialQuoteMark {
+  font-size: 10rem;
+  color: black;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: -5rem;
+}
+
+.HomePageTestimonialQuote {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 3.25rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 2.2rem;
+  line-height: 1.15;
+  letter-spacing: 0.01em;
+}
+
+.HomePageTestimonialAttribution {
+  margin-top: 0.5rem;
+}
+
+.HomePageTestimonialName {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1a2233;
+}
+
+.HomePageTestimonialTitle {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #4b4b4b;
+  margin-top: 0.1rem;
+}
+
+.HomePageTestimonialImageWrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 750px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.HomePageTestimonialImage {
+  position: relative;
+  height: 700px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  display: block;
+  vertical-align: bottom;
+}
+
+.HomePageChartHeaderContainer {
+  width: 100%;
+  max-width: 1250px;
+  margin: 60px auto 0 auto;
+  text-align: center;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageChartHeader {
+  font-size: 4rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  margin-bottom: 36px;
+  color: #1a2233;
+}
+
+.HomePageChartSubheader {
+  font-size: 1.5rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-bottom: 48px;
+  font-weight: 400;
+}
+
+.HomePageChartContainer {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageChartMessage {
+  width: 100%;
+  max-width: 1250px;
+  margin: 32px auto 60px auto;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #333;
+  font-weight: 500;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageStepsSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 64px auto 0 auto;
+  padding: 0 24px 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f5fa;
+  border-radius: 32px;
+  box-shadow: 0 2px 16px 0 rgba(80, 80, 120, 0.06);
+}
+
+.HomePageStepsTitle {
+  font-size: 2.2rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.HomePageStepsGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 48px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.HomePageStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+  min-width: 220px;
+  max-width: 260px;
+}
+
+.HomePageStepImage {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px 0 rgba(80, 80, 120, 0.1);
+  margin-bottom: 24px;
+  background: #f3f5fa;
+}
+
+.HomePageStepCaption {
+  font-size: 1.15rem;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.HomePageStepsGridAlt {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 56px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.HomePageStepsLeft {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.HomePageStepImageLarge {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 36px;
+  box-shadow: 0 4px 32px 0 rgba(80, 80, 120, 0.13);
+  background: #f3f5fa;
+  margin-bottom: 28px;
+}
+
+.HomePageStepCaptionLarge {
+  font-size: 1.25rem;
+  color: #222;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+}
+
+.HomePageStepsRight {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomePageStepCard {
+  background: #f3f5fa;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px 0 rgba(80, 80, 120, 0.08);
+  padding: 32px 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 340px;
+}
+
+.HomePageStepCardImage {
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 18px;
+  background: #f3f5fa;
+  box-shadow: 0 2px 8px 0 rgba(80, 80, 120, 0.07);
+}
+
+.HomePageStepCardCaption {
+  font-size: 1.1rem;
+  color: #222;
+  font-weight: 500;
+  text-align: center;
+}
+
+.HomePageStepTitleLarge {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.HomePageStepDescLarge {
+  font-size: 1.05rem;
+  color: #444;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.HomePageStepCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.HomePageStepCardDesc {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.HomePageFeatureSection {
+  width: 100%;
+  max-width: 1400px;
+  margin: 24px auto 0 auto;
+  padding: 0 24px 64px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageFeatureTitle {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.HomePageFeatureTitleUnderline {
+  position: relative;
+  display: inline-block;
+}
+.HomePageFeatureTitleUnderline::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -48px;
+  height: 50px;
+  border-radius: 12px;
+  background: none;
+  pointer-events: none;
+  z-index: 1;
+  /* SVG underline as background image for hand-drawn effect, full width, gradient, no cutoff */
+  background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="30" viewBox="0 0 400 30" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="grad" x1="0" y1="0" x2="400" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="%23aa80ff"/><stop offset="1" stop-color="%234b82fe"/></linearGradient></defs><path d="M10 20 Q200 0 390 20" stroke="url(%23grad)" stroke-width="7" stroke-linecap="round" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.HomePageFeatureGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageFeatureIphoneCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.HomePageFeatureIphone {
+  width: 320px;
+  border-radius: 36px;
+  box-shadow: 0 4px 32px 0 rgba(80, 80, 120, 0.13);
+  background: #f3f5fa;
+}
+
+.HomePageFeatureTabs {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  justify-content: center;
+}
+
+.HomePageFeatureTabDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  transition: background 0.2s;
+  cursor: pointer;
+  outline: none;
+}
+.HomePageFeatureTabDot.active {
+  background: #6f10ff;
+}
+
+.HomePageFeatureCardsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 1 0;
+  justify-content: center;
+  height: 100%;
+  background: #f3f5fa;
+  border-radius: 24px;
+}
+
+.HomePageFeatureCard {
+  background: #f3f5fa;
+  border-radius: 128px;
+  box-shadow: 0 2px 12px 0 rgba(80, 80, 120, 0.08);
+  padding: 28px 32px;
+  transition: border 0.2s, box-shadow 0.2s, background 0.2s, transform 0.2s;
+  border: 2px solid #ffffff; /* light white border */
+  cursor: pointer;
+}
+.HomePageFeatureCard.active {
+  border: 2px solid #6f10ff;
+  background: #f7f3ff; /* subtle light purple */
+  border-radius: 128px;
+  box-shadow: 0 8px 40px 0 rgba(111, 16, 255, 0.22),
+    0 4px 16px 0 rgba(80, 80, 120, 0.13);
+  transform: scale(1.035);
+  z-index: 2;
+}
+
+.HomePageFeatureCardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a2233;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.HomePageFeatureCardDesc {
+  font-size: 1rem;
+  color: #444;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.GradientText {
+  background: linear-gradient(90deg, #aa80ff 0%, #4b82fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+.GradientText::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.7) 40%,
+    rgba(255, 255, 255, 0.2) 60%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  mix-blend-mode: lighten;
+  animation: sparkle 2.2s linear infinite;
+}
+@keyframes sparkle {
+  0% {
+    background-position: -120% 0;
+  }
+  100% {
+    background-position: 120% 0;
+  }
+}
+
+.HomePageMetricsSection,
+.HomePageMetricsHeader,
+.HomePageMetricsTitle,
+.HomePageMetricsTitleItalic,
+.HomePageMetricsDesc,
+.HomePageMetricsHighlight,
+.HomePageMetricsGrid,
+.HomePageMetricsCard,
+.HomePageMetricsCardTitle,
+.HomePageMetricsCardLearnMore,
+.HomePageMetricsCardArrow {
+  font-family: "Roboto", Arial, Helvetica, sans-serif !important;
+}
+
+/* Keep Montserrat for these only */
+.HomePageSectionOneTitle,
+.HomePageSectionOneTitleEm {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif !important;
+}
+
+.HomePageMetricsSection {
+  background: #f3f5fa;
+  border-radius: 0;
+  margin: 0 auto 0 auto;
+  padding: 72px 0 96px 0;
+  max-width: 1250px;
+  box-shadow: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.HomePageMetricsHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 60px;
+}
+.HomePageMetricsLogoGradient {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, #aa80ff 0%, #4b82fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.HomePageMetricsLogo {
+  height: 80px;
+  width: auto;
+}
+.HomePageMetricsTitle {
+  font-size: 4rem;
+  font-weight: 800;
+}
+.HomePageMetricsTitleItalic {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.HomePageMetricsDesc {
+  font-size: 1.5rem;
+  margin-bottom: 80px;
+  text-align: center;
+  color: #232a38;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.HomePageMetricsHighlight {
+  font-size: 1.5rem;
+  color: #6f10ff;
+  font-weight: 700;
+}
+.HomePageMetricsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 80px 100px;
+  justify-items: center;
+  align-items: start;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.HomePageMetricsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+  border-radius: 24px;
+  padding: 0 24px;
+  min-width: 220px;
+}
+/* Center the two bottom cards under the top row */
+.HomePageMetricsGrid > .HomePageMetricsCard:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 2;
+}
+.HomePageMetricsGrid > .HomePageMetricsCard:nth-child(5) {
+  grid-column: 3 / 4;
+  grid-row: 2;
+}
+.HomePageMetricsGrid > .HomePageMetricsCard:nth-child(-n + 3) {
+  grid-row: 1;
+}
+.HomePageMetricsCardTitle {
+  font-size: 1.5rem;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #232a38;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.HomePageMetricsCardImage {
+  width: 120px;
+  height: auto;
+  margin-bottom: 18px;
+  display: block;
+}
+.HomePageMetricsCardLearnMore {
+  font-size: 1rem;
+  color: #6f10ff;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+.HomePageMetricsCardLearnMore:hover {
+  color: #4b82fe;
+}
+.HomePageMetricsCardArrow {
+  font-size: 1.2em;
+  margin-left: 4px;
+}
+.HomePageMetricsCardPlaceholder {
+  pointer-events: none;
+}
+
+.HomePageGradientCtaSection {
+  width: 100vw;
+  min-height: 280px;
+  background: linear-gradient(180deg, #aa80ff 0%, #4b82fe 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 36px 0;
+  margin: 0;
+}
+.HomePageGradientCtaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 700px;
+}
+.HomePageGradientCtaTitle {
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+  letter-spacing: 0.01em;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  white-space: nowrap;
+}
+.HomePageGradientCtaSubtitle {
+  color: #fff;
+  font-size: 1.3rem;
+  font-style: normal;
+  text-align: center;
+  margin-bottom: 28px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+.HomePageGradientCtaDownloadBtn {
+  background: #fff;
+  color: #4b82fe;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+  padding: 20px 56px;
+  text-decoration: none;
+  box-shadow: 0 4px 24px 0 rgba(80, 80, 120, 0.1);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  text-align: center;
+  margin-top: 8px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  display: inline-block;
+}
+.HomePageGradientCtaDownloadBtn:hover {
+  background: #f3f5fa;
+  color: #6f10ff;
+  box-shadow: 0 8px 32px 0 rgba(80, 80, 120, 0.18);
+}
+
+.HomePageFooter {
+  width: 100vw;
+  background: #f3f5fa;
+  border-top: 1px solid #e0e0e0;
+  padding: 32px 0 24px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomePageFooterContent {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 32px;
+}
+.HomePageFooterLogo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.HomePageFooterText {
+  color: #232a38;
+  font-size: 1.15rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: right;
+}
+.HomePageFooterLink {
+  color: #6f10ff;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 4px;
+  transition: color 0.2s;
+}
+.HomePageFooterLink:hover {
+  color: #4b82fe;
+}
+
+/* Human Body Scan Effect Styles */
+.HomePageHumanBodyScanWrapper {
+  position: relative;
+  width: 320px;
+  max-width: 90vw;
+  margin: 0 auto 48px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HomePageHumanBodyImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  background: transparent;
+  z-index: 1;
+}
+.HomePageScanBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(
+    180deg,
+    rgba(111, 16, 255, 0.45) 0%,
+    rgba(75, 130, 254, 0.85) 100%
+  );
+  opacity: 0.95;
+  border-radius: 16px;
+  pointer-events: none;
+  animation: scan-bar-move-bounce 5s ease-in-out infinite;
+  z-index: 2;
+}
+@keyframes scan-bar-move-bounce {
+  0% {
+    top: 0%;
+  }
+  45% {
+    top: calc(100% - 8px);
+  }
+  55% {
+    top: calc(100% - 8px);
+  }
+  100% {
+    top: 0%;
+  }
+}
