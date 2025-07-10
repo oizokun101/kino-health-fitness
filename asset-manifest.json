@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kino-health-fitness/static/css/main.5735b22b.css",
+    "main.js": "/kino-health-fitness/static/js/main.55639a9a.js",
+    "static/js/453.cc7f6080.chunk.js": "/kino-health-fitness/static/js/453.cc7f6080.chunk.js",
+    "static/media/HumanBody.png": "/kino-health-fitness/static/media/HumanBody.7c6d3ec4531b98d09619.png",
+    "static/media/DoctorHoldingIphoneLandingImage.png": "/kino-health-fitness/static/media/DoctorHoldingIphoneLandingImage.b3611c49f8a2f84170e2.png",
+    "static/media/BackroundCurveLines.png": "/kino-health-fitness/static/media/BackroundCurveLines.41970d85d870e4f39863.png",
+    "static/media/DownloadiPhone.png": "/kino-health-fitness/static/media/DownloadiPhone.1c25a6280532fdbd20c2.png",
+    "static/media/AlexMcIntyreMD.png": "/kino-health-fitness/static/media/AlexMcIntyreMD.8b2f1bab44bfce429c16.png",
+    "static/media/WelcomeiPhone.png": "/kino-health-fitness/static/media/WelcomeiPhone.dbd09c96ee60c1e391df.png",
+    "static/media/CreateiPhone.png": "/kino-health-fitness/static/media/CreateiPhone.1fb042216b98f18776cd.png",
+    "static/media/KinoLogo.png": "/kino-health-fitness/static/media/KinoLogo.355f4acbe4656f34eb79.png",
+    "static/media/DartmouthLogo.png": "/kino-health-fitness/static/media/DartmouthLogo.abf47128969a2512d4ba.png",
+    "static/media/TsukubaLogo.png": "/kino-health-fitness/static/media/TsukubaLogo.33b7bba7d8871740f114.png",
+    "index.html": "/kino-health-fitness/index.html",
+    "main.5735b22b.css.map": "/kino-health-fitness/static/css/main.5735b22b.css.map",
+    "main.55639a9a.js.map": "/kino-health-fitness/static/js/main.55639a9a.js.map",
+    "453.cc7f6080.chunk.js.map": "/kino-health-fitness/static/js/453.cc7f6080.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5735b22b.css",
+    "static/js/main.55639a9a.js"
+  ]
+}
